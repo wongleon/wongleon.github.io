@@ -151,20 +151,21 @@ HTMLActuator.prototype.updateBestScore = function (bestScore) {
 
 HTMLActuator.prototype.message = function (won) {
   var mytxt=new Array(14);
-  mytxt[0]="巨人都还没出啊！";
-  mytxt[1]="炸弹人！冲啊破墙而入！";
-  mytxt[2]="从天上扔炸弹,嘿嘿！";
-  mytxt[3]="法师好犀利！";
-  mytxt[4]="来个天使保驾护航！";
-  mytxt[5]="十条龙，推平你家！";
-  mytxt[6]="成也皮卡，败也皮卡";
-  mytxt[7]="我呀我是小亡灵，我呀我嘛天上飞！";
-  mytxt[8]="哈哈，墙什么的都拦不住我！";
-  mytxt[9]="看我双刃斧的厉害";
-  mytxt[10]="分裂！分裂！";
-  mytxt[11]="地上的亡灵啊，复活吧！！";
-  mytxt[12]="我是你们的王！";
-  mytxt[13]="请叫我女王大人！";
+   mytxt[0]="炸弹人！冲啊破墙而入！";
+  mytxt[1]="从天上扔炸弹,嘿嘿！";
+  mytxt[2]="法师好犀利！";
+  mytxt[3]="来个天使保驾护航！";
+  mytxt[4]="十条龙，推平你家！";
+  mytxt[5]="成也皮卡，败也皮卡";
+  mytxt[6]="我呀我是小亡灵，我呀我嘛天上飞！";
+  mytxt[7]="哈哈，墙什么的都拦不住我！";
+  mytxt[8]="看我双刃斧的厉害";
+  mytxt[9]="分裂！分裂！";
+  mytxt[10]="地上的亡灵啊，复活吧！！";
+  mytxt[11]="我是你们的王！";
+  mytxt[12]="请叫我女王大人！";
+  mytxt[13]="oh yeah！";
+
 
 
   var text3 = function (m) { var r = 0; while (m > 1) r++, m >>= 1; return r; }
