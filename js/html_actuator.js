@@ -151,24 +151,25 @@ HTMLActuator.prototype.updateBestScore = function (bestScore) {
 
 HTMLActuator.prototype.message = function (won) {
   var mytxt=new Array(14);
- mytxt[0]="野蛮人部落。冲啊";
-  mytxt[1]="瞧我万箭齐发！";
-  mytxt[2]="金币！金币！";
-  mytxt[3]="自从我膝盖中了一箭"
-  mytxt[4]="炸弹人！冲啊破墙而入！";
-  mytxt[5]="从天上扔炸弹,嘿嘿！";
-  mytxt[6]="法师好犀利！";
-  mytxt[7]="来个天使保驾护航！";
-  mytxt[8]="十条龙，推平你家！";
-  mytxt[9]="成也皮卡，败也皮卡";
-  mytxt[10]="我呀我是小亡灵，我呀我嘛天上飞！";
-  mytxt[11]="哈哈，墙什么的都拦不住我！";
-  mytxt[12]="看我双刃斧的厉害";
-  mytxt[13]="分裂！分裂！";
+ mytxt[0]="金币！金币！";
+  mytxt[1]="自从我膝盖中了一箭";
+  mytxt[2]="炸弹人！冲啊破墙而入！";
+  mytxt[3]="从天上扔炸弹,嘿嘿！";
+  mytxt[4]="法师好犀利！";
+  mytxt[5]="来个天使保驾护航！";
+  mytxt[6]="十条龙，推平你家！";
+  mytxt[7]="成也皮卡，败也皮卡";
+  mytxt[8]="我呀我是小亡灵，我呀我嘛天上飞！";
+  mytxt[9]="哈哈，墙什么的都拦不住我！";
+  mytxt[10]="看我双刃斧的厉害";
+  mytxt[11]="分裂！分裂！";
+  mytxt[12]="地上的亡灵啊，复活吧！！";
+  mytxt[13]="我是你们的王！";
+
 
   var text3 = function (m) { var r = 0; while (m > 1) r++, m >>= 1; return r; }
   var type    = won ? "game-won" : "game-over";
-  var message = won ? "万岁！" : mytxt[text3(maxscore)-3];
+  var message = won ? "请叫我女王大人！" : mytxt[text3(maxscore)-3];
 
   if (typeof ga !== "undefined") {
     ga("send", "event", "game", "end", type, this.score);
